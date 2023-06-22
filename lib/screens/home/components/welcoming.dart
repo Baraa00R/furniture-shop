@@ -53,8 +53,8 @@ class welcoming extends StatelessWidget {
               controller: _controller,
               onPageChanged: (index) {},
               children: [
-                Image.asset("assets/images/bed2.png"),
                 Image.asset("assets/images/kenepe3.png"),
+                Image.asset("assets/images/bed2.png"),
                 Image.asset("assets/images/koltuk3.png"),
               ],
             ),

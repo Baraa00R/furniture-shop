@@ -5,8 +5,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:stylish/constants.dart';
 import 'package:stylish/screens/drawer/date.dart';
-import 'package:stylish/screens/home/components/welcoming.dart';
-import 'package:stylish/screens/home/home_screen.dart';
+import 'package:stylish/screens/home/components/loginPage.dart';
 
 class myDrawer extends StatelessWidget {
   @override
@@ -54,7 +53,14 @@ class myDrawer extends StatelessWidget {
           ListTile(
               leading: Icon(Icons.exit_to_app),
               title: Text('Exit'),
-              onTap: () => exit(0)),
+              onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => loginPage(),
+                ),
+              );
+            },),
         ],
       ),
       backgroundColor: primaryColor,
